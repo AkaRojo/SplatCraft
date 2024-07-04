@@ -1,0 +1,8 @@
+scoreboard objectives add respawn.dead deathCount
+scoreboard objectives add respawn.timer dummy
+scoreboard objectives add respawn.math dummy
+scoreboard players set 1 respawn.math 1
+scoreboard players set 0 respawn.math 0
+scoreboard players set time respawn.timer 100
+tellraw @a {"color":"green","text":"respawn timer loaded!"}
+gamerule doImmediateRespawn true
